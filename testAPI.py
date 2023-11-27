@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 app = FastAPI()
 
-client = MongoClient("mongodb+srv://aliDB:Solere1122@cluster0.e1uptvj.mongodb.net/")
+client = MongoClient("mongodb+srv://<password>@cluster0.e1uptvj.mongodb.net/")
 database_name = "aliest"
 init_beanie(client, database_name)
 
