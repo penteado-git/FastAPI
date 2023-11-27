@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 app = FastAPI()
 
-client = MongoClient("mongodb+srv://<password>@cluster0.e1uptvj.mongodb.net/")
+client = MongoClient(#token para acessar a DB)
 database_name = "aliest"
 init_beanie(client, database_name)
 
